@@ -1,0 +1,599 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;700&family=Unbounded:wght@200;400;700&display=swap');
+    /*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Unbounded', cursive;
+*/
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: #000;
+        background-image: url(https://p4.wallpaperbetter.com/wallpaper/829/90/424/5bd20d1fbccf3-wallpaper-preview.jpg);
+        background-attachment: fixed;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        object-fit: cover;
+        z-index: -10;
+    }
+    
+    .header {
+        height: 250px;
+        background-color: white;
+        padding: 1em;
+        text-align: center;
+        width: 100%;
+        top: 0;
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 50px 20px #000;
+        height: 300px;
+    }
+    
+    .header__logo {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(0, 0, 0);
+        color: #FFF;
+        filter: drop-shadow(0 0 10px black);
+    }
+    
+    .header__text {
+        margin: auto;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
+    .icono {
+        position: fixed;
+        font-size: 25px;
+        margin-top: 15px;
+        color: rgb(0, 0, 0);
+        top: 20px;
+        left: 10px;
+        cursor: pointer;
+        z-index: 50;
+    }
+    
+    .header__list {
+        padding: 2em;
+        display: flex;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+    
+    .header__link {
+        text-decoration: none;
+        color: #000;
+        font-size: 65px;
+        font-weight: 600;
+        transition: all 0.3s;
+        filter: drop-shadow(0 0 20px #ffae6c);
+    }
+    
+    .header__link:hover {
+        color: #362379;
+        filter: drop-shadow(0 0 10px #ffae6c);
+    }
+    
+    .header__link:active {
+        filter: drop-shadow(0 0 10px #ffae6c) drop-shadow(0 0 10px #ffae6c) drop-shadow(0 0 10px #ffae6c);
+    }
+    
+    .frase {
+        color: #FFF;
+        font-size: 40px;
+        margin-top: 2em;
+        filter: drop-shadow(0 0 20px black) drop-shadow(0 0 20px black);
+    }
+    
+    .grid-container {
+        display: grid;
+        width: 100%;
+        height: 700vh;
+        grid-template-areas: "galeria""galeria" "nada1" "acercade" "nada2" "contacto" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin: 0 auto;
+        margin-top: 45em;
+    }
+    
+    .caja {
+        background-color: #FFF;
+    }
+    
+    .caja1 {
+        grid-area: galeria;
+        text-align: center;
+        background-color: #FFF;
+        box-shadow: 0 0 50px 40px #000;
+    }
+    
+    .proyectos {
+        font-size: 60px;
+        color: #000;
+        padding: 1em 0 3em 0;
+    }
+    
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 1em;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #000;
+    }
+    
+    .galeria__proyecto1 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto2 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto3 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto4 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto5 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto6 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto7 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto8 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__proyecto9 {
+        width: 100%;
+        height: 1fr;
+        border-radius: 0;
+        display: grid;
+        grid-template: 1fr/1fr;
+        grid-template-areas: "img";
+        background-color: #FFF;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .galeria__img1 {
+        object-fit: cover;
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+        grid-area: img;
+        filter: drop-shadow(0 0 10px black);
+    }
+    
+    .galeria__proyecto1::after {
+        content: "Proyecto. 01";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto1:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto1:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto2::after {
+        content: "Proyecto. 02";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto2:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto2:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto3::after {
+        content: "Proyecto. 03";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto3:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto3:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto4::after {
+        content: "Proyecto. 04";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto4:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto4:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto5::after {
+        content: "Proyecto. 05";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto5:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto5:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto6::after {
+        content: "Proyecto. 06";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto6:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto6:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto7::after {
+        content: "Proyecto. 07";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto7:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto7:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto8::after {
+        content: "Proyecto. 08";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto8:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto8:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .galeria__proyecto9::after {
+        content: "Proyecto. 09";
+        grid-area: img;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.60);
+        color: #FFF;
+        display: grid;
+        place-items: center;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        clip-path: circle(0 at top right);
+        transition: clip-path .3s;
+    }
+    
+    .galeria__proyecto9:hover::after {
+        clip-path: circle(150% at top right);
+        cursor: pointer;
+    }
+    
+    .galeria__proyecto9:active::after {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+    
+    .caja2 {
+        grid-area: nada1;
+        background: none;
+        position: static;
+        z-index: -1;
+    }
+    
+    .caja3 {
+        grid-area: acercade;
+        box-shadow: 0 0 50px 40px #000;
+    }
+    
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .aboutme__titulo {
+        flex-basis: 150px;
+        width: 90%;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .aboutme__text {
+        flex-basis: 200px;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .caja4 {
+        grid-area: nada2;
+        background: none;
+    }
+    
+    .caja5 {
+        grid-area: contacto;
+        box-shadow: 0 0 50px 40px #000;
+    }
+    
+    .contact-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .contac-titulo {
+        font-size: 50px;
+        text-align: center;
+        margin: 1em;
+    }
+    
+    .contac {
+        margin: auto;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        height: 80vh;
+        flex-grow: 1fr;
+    }
+    
+    .label {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        cursor: pointer;
+        width: auto;
+    }
+    
+    .input {
+        min-width: 100px;
+        width: 100%;
+        flex-basis: 30px;
+    }
+    
+    .button {
+        width: 150px;
+        flex-basis: 30px;
+        align-self: center;
+        background-color: #000;
+        color: #FFF;
+        margin-top: 2em;
+        cursor: pointer;
+    }
+    
+    .text-area {
+        resize: none;
+        width: 100%;
+        flex-basis: 200px;
+    }
+    
+    .caja6 {
+        grid-area: footer;
+        grid-column-end: auto;
+        text-align: center;
+        background-color: #000;
+        color: #FFF;
+    }
+    
+    .fa-brands {
+        color: #FFF;
+        margin: 0.5em;
+    }
